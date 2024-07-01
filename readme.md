@@ -43,7 +43,7 @@ coleções do storeManager para serem importadas no `Postman` e `ThunderClient`,
 
 ### Autenticação
 
-#### Criação de usuário  
+#### Criar usuário  
 - **URL:** `/users/signup`
 - **Método:** `POST`
 - **Body:**
@@ -83,7 +83,7 @@ coleções do storeManager para serem importadas no `Postman` e `ThunderClient`,
 
 ### Clientes
 
-#### Criação de clientes
+#### Criar cliente
 - **URL:** `/clients`
 - **Método:** `POST`
 - **Headers:**
@@ -256,7 +256,7 @@ coleções do storeManager para serem importadas no `Postman` e `ThunderClient`,
 
 ### Produtos
 
-#### Criação de produtos
+#### Criar produto
 - **URL:** `/products`
 - **Método:** `POST`
 - **Headers:**
@@ -395,7 +395,7 @@ coleções do storeManager para serem importadas no `Postman` e `ThunderClient`,
 
 ### Vendas
 
-#### Criação de Venda
+#### Criar venda
 - **URL:** `/sales`
 - **Método:** `POST`
 - **Headers:**
