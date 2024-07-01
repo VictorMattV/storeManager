@@ -1,0 +1,354 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "store_manager",
+    "collectionId": "fdc2bd79-0e13-4c06-bd36-a90f3d24e953",
+    "dateExported": "2024-07-01T01:34:38.463Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "7698249c-5138-45e6-9d2a-410f0f8a14b5",
+            "name": "users",
+            "containerId": "",
+            "created": "2024-06-27T19:49:00.965Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "7237446e-e00e-407a-b404-f48cc30828ee",
+            "name": "clients",
+            "containerId": "",
+            "created": "2024-06-27T19:50:23.571Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "e575d6e9-cbc9-4b91-9958-3d3c5bb7926f",
+            "name": "products",
+            "containerId": "",
+            "created": "2024-06-27T19:50:34.761Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "c087340d-c1c8-407a-8a41-a715ef3c8c90",
+            "name": "sales",
+            "containerId": "",
+            "created": "2024-06-27T19:50:42.625Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "8a495762-aa1c-4532-8aa4-b4ecb6a0f455",
+            "colId": "fdc2bd79-0e13-4c06-bd36-a90f3d24e953",
+            "containerId": "e575d6e9-cbc9-4b91-9958-3d3c5bb7926f",
+            "name": "Create Product",
+            "url": "http://localhost:3000/products/",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2024-06-27T19:51:27.305Z",
+            "modified": "2024-07-01T01:30:27.286Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE5Nzk3MjczLCJleHAiOjE3MTk4MDA4NzN9.jThnVMSbB_gdobZ50svicTAKG8db4xxuMvzuulOlz08"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Mouse\",\n  \"type\": \"mouse gamer\",\n  \"description\": \"Mouse voltado para jogos FPS\",\n  \"price\": 300.00,\n  \"quantity\": 10\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "369f97f2-2070-404e-81cb-4640d4baf65a",
+            "colId": "fdc2bd79-0e13-4c06-bd36-a90f3d24e953",
+            "containerId": "e575d6e9-cbc9-4b91-9958-3d3c5bb7926f",
+            "name": "Get all Products",
+            "url": "http://localhost:3000/products/",
+            "method": "GET",
+            "sortNum": 5312.5,
+            "created": "2024-06-27T19:51:31.849Z",
+            "modified": "2024-07-01T01:30:36.447Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE5Nzk3MjczLCJleHAiOjE3MTk4MDA4NzN9.jThnVMSbB_gdobZ50svicTAKG8db4xxuMvzuulOlz08"
+                }
+            ]
+        },
+        {
+            "_id": "17911833-3e21-4034-8fe9-904e636588c9",
+            "colId": "fdc2bd79-0e13-4c06-bd36-a90f3d24e953",
+            "containerId": "e575d6e9-cbc9-4b91-9958-3d3c5bb7926f",
+            "name": "Get Product by ID",
+            "url": "http://localhost:3000/products/1",
+            "method": "GET",
+            "sortNum": 5625,
+            "created": "2024-06-27T19:51:16.137Z",
+            "modified": "2024-07-01T01:30:46.551Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE5Nzk3MjczLCJleHAiOjE3MTk4MDA4NzN9.jThnVMSbB_gdobZ50svicTAKG8db4xxuMvzuulOlz08"
+                }
+            ]
+        },
+        {
+            "_id": "8147070f-56b1-46ca-9091-0d97b56a8595",
+            "colId": "fdc2bd79-0e13-4c06-bd36-a90f3d24e953",
+            "containerId": "e575d6e9-cbc9-4b91-9958-3d3c5bb7926f",
+            "name": "Update Product by ID",
+            "url": "http://localhost:3000/products/4",
+            "method": "PUT",
+            "sortNum": 6250,
+            "created": "2024-06-27T19:51:11.136Z",
+            "modified": "2024-07-01T01:32:04.847Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE5Nzk3MjczLCJleHAiOjE3MTk4MDA4NzN9.jThnVMSbB_gdobZ50svicTAKG8db4xxuMvzuulOlz08"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"mouse\",\n  \"type\": \"mouse convencional\",\n  \"description\": \"mouse de uso convencional\",\n  \"price\": 50.00,\n  \"quantity\": 2\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "5e51d81b-9624-4391-a70e-384e1323417b",
+            "colId": "fdc2bd79-0e13-4c06-bd36-a90f3d24e953",
+            "containerId": "e575d6e9-cbc9-4b91-9958-3d3c5bb7926f",
+            "name": "Delete Product by ID",
+            "url": "http://localhost:3000/products/2",
+            "method": "DELETE",
+            "sortNum": 10000,
+            "created": "2024-06-27T19:51:04.380Z",
+            "modified": "2024-07-01T00:41:51.809Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE5NzkzNDg1LCJleHAiOjE3MTk3OTcwODV9.zsVCjsQWAd00JFwDZzCHKu-TxESWEbq6JDg7QFEvt5Q"
+                }
+            ]
+        },
+        {
+            "_id": "221633e8-0ecc-47b3-8bf8-43b9961680e5",
+            "colId": "fdc2bd79-0e13-4c06-bd36-a90f3d24e953",
+            "containerId": "c087340d-c1c8-407a-8a41-a715ef3c8c90",
+            "name": "Create Sale",
+            "url": "http://localhost:3000/sales",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2024-06-28T19:13:51.027Z",
+            "modified": "2024-07-01T01:33:34.053Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE5Nzk3MjczLCJleHAiOjE3MTk4MDA4NzN9.jThnVMSbB_gdobZ50svicTAKG8db4xxuMvzuulOlz08"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"clientId\": 2,\n  \"productId\": 2,\n  \"quantity\": 1\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "88b6bbf4-7758-47fa-a1c1-8f71a8b129c9",
+            "colId": "fdc2bd79-0e13-4c06-bd36-a90f3d24e953",
+            "containerId": "c087340d-c1c8-407a-8a41-a715ef3c8c90",
+            "name": "Get all Sales",
+            "url": "http://localhost:3000/sales",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-06-28T18:52:38.871Z",
+            "modified": "2024-07-01T01:33:56.900Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE5Nzk3MjczLCJleHAiOjE3MTk4MDA4NzN9.jThnVMSbB_gdobZ50svicTAKG8db4xxuMvzuulOlz08"
+                }
+            ]
+        },
+        {
+            "_id": "57c79b75-8cba-4bdb-b468-52cd579f385e",
+            "colId": "fdc2bd79-0e13-4c06-bd36-a90f3d24e953",
+            "containerId": "7237446e-e00e-407a-b404-f48cc30828ee",
+            "name": "Create Client",
+            "url": "http://localhost:3000/clients",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-06-28T19:24:01.791Z",
+            "modified": "2024-07-01T01:28:35.409Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE5Nzk3MjczLCJleHAiOjE3MTk4MDA4NzN9.jThnVMSbB_gdobZ50svicTAKG8db4xxuMvzuulOlz08"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Marcos Silva\",\n  \"cpf\": \"12345678909\",\n  \"phone\": \"5562985667889\",\n  \"address\": {\n    \"zip\": \"12345-678\",\n    \"street\": \"Rua Exemplo\",\n    \"neighborhood\": \"Bairro Exemplo\",\n    \"city\": \"Cidade Exemplo\",\n    \"state\": \"EX\"\n  }\n}\n\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "71980a74-ace0-4160-8f97-503a0fd57371",
+            "colId": "fdc2bd79-0e13-4c06-bd36-a90f3d24e953",
+            "containerId": "c087340d-c1c8-407a-8a41-a715ef3c8c90",
+            "name": "Get all Sales by Client ID",
+            "url": "http://localhost:3000/sales/client/2",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-06-28T19:28:33.663Z",
+            "modified": "2024-07-01T01:34:04.812Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE5Nzk3MjczLCJleHAiOjE3MTk4MDA4NzN9.jThnVMSbB_gdobZ50svicTAKG8db4xxuMvzuulOlz08"
+                }
+            ]
+        },
+        {
+            "_id": "b9932475-16fd-4a56-9ba7-dd17a585221d",
+            "colId": "fdc2bd79-0e13-4c06-bd36-a90f3d24e953",
+            "containerId": "7237446e-e00e-407a-b404-f48cc30828ee",
+            "name": "Get All Clients",
+            "url": "http://localhost:3000/clients/",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-06-28T20:19:25.148Z",
+            "modified": "2024-07-01T01:28:44.853Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE5Nzk3MjczLCJleHAiOjE3MTk4MDA4NzN9.jThnVMSbB_gdobZ50svicTAKG8db4xxuMvzuulOlz08"
+                }
+            ]
+        },
+        {
+            "_id": "8c8ed9eb-eedb-4853-8cd3-25de01d044db",
+            "colId": "fdc2bd79-0e13-4c06-bd36-a90f3d24e953",
+            "containerId": "7237446e-e00e-407a-b404-f48cc30828ee",
+            "name": "Get Client by ID",
+            "url": "http://localhost:3000/clients/2",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-06-28T19:56:43.165Z",
+            "modified": "2024-07-01T01:28:55.093Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE5Nzk3MjczLCJleHAiOjE3MTk4MDA4NzN9.jThnVMSbB_gdobZ50svicTAKG8db4xxuMvzuulOlz08"
+                }
+            ]
+        },
+        {
+            "_id": "89d0104e-4832-4fdd-b460-613e684a4acb",
+            "colId": "fdc2bd79-0e13-4c06-bd36-a90f3d24e953",
+            "containerId": "7698249c-5138-45e6-9d2a-410f0f8a14b5",
+            "name": "Create User",
+            "url": "http://localhost:3000/users/signup",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-06-28T20:15:46.228Z",
+            "modified": "2024-07-01T00:10:32.002Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImlhdCI6MTcxOTY5NjYyOCwiZXhwIjoxNzE5NzAwMjI4fQ.RUTf8RgW3h0RiQPRxEBWe92mkeA7HkffS4HakYXhJt0"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"vendedor1@example.com\",\n  \"password\": \"securepassword1\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c1ac1d1b-7f33-451d-88f7-c49cf39cd1a9",
+            "colId": "fdc2bd79-0e13-4c06-bd36-a90f3d24e953",
+            "containerId": "7698249c-5138-45e6-9d2a-410f0f8a14b5",
+            "name": "Login User",
+            "url": "http://localhost:3000/users/login",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-06-28T20:16:08.179Z",
+            "modified": "2024-07-01T00:14:31.888Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"vendedor1@example.com\",\n  \"password\": \"securepassword1\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "17e8d065-ae8e-4431-b365-d51bb3c1729d",
+            "colId": "fdc2bd79-0e13-4c06-bd36-a90f3d24e953",
+            "containerId": "7237446e-e00e-407a-b404-f48cc30828ee",
+            "name": "Update Client by ID",
+            "url": "http://localhost:3000/clients/2",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-06-28T20:20:19.501Z",
+            "modified": "2024-07-01T01:29:11.449Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE5Nzk3MjczLCJleHAiOjE3MTk4MDA4NzN9.jThnVMSbB_gdobZ50svicTAKG8db4xxuMvzuulOlz08"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"João Matos\",\n  \"cpf\": \"12345678978\",\n  \"phone\": \"5563998612321\",\n  \"address\": {\n    \"zip\": \"12345-678\",\n    \"street\": \"Rua Exemplo\",\n    \"neighborhood\": \"Bairro Exemplo\",\n    \"city\": \"Cidade Exemplo\",\n    \"state\": \"EX\"\n  }\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "58ee5661-0ba5-4577-af45-4fd54f61df94",
+            "colId": "fdc2bd79-0e13-4c06-bd36-a90f3d24e953",
+            "containerId": "7237446e-e00e-407a-b404-f48cc30828ee",
+            "name": "Delete Client by ID",
+            "url": "http://localhost:3000/clients/2",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2024-06-28T20:22:02.359Z",
+            "modified": "2024-07-01T00:42:59.310Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE5NzkzNDg1LCJleHAiOjE3MTk3OTcwODV9.zsVCjsQWAd00JFwDZzCHKu-TxESWEbq6JDg7QFEvt5Q"
+                }
+            ]
+        },
+        {
+            "_id": "c37faced-ce07-47da-b8f9-3db7386e6df5",
+            "colId": "fdc2bd79-0e13-4c06-bd36-a90f3d24e953",
+            "containerId": "c087340d-c1c8-407a-8a41-a715ef3c8c90",
+            "name": "Get Sales by month/year",
+            "url": "http://localhost:3000/sales/filter?month=7&year=2024",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-06-28T20:24:59.119Z",
+            "modified": "2024-07-01T01:34:18.853Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE5Nzk3MjczLCJleHAiOjE3MTk4MDA4NzN9.jThnVMSbB_gdobZ50svicTAKG8db4xxuMvzuulOlz08"
+                }
+            ],
+            "params": [
+                {
+                    "name": "month",
+                    "value": "7",
+                    "isPath": false
+                },
+                {
+                    "name": "year",
+                    "value": "2024",
+                    "isPath": false
+                }
+            ]
+        }
+    ],
+    "ref": "Ql22HQBthY1ZcVMI7TNrGdfC1ZwloCybQhKGa0g8LByEEAk4kv9EYsfuD6tH7Csdq32p5kxtKaep2Xem_yqszA"
+}

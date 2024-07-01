@@ -1,0 +1,51 @@
+DROP DATABASE IF EXISTS store_manager;
+
+CREATE DATABASE store_manager;
+
+USE store_manager;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS address (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  zip VARCHAR(9) NOT NULL,
+  street VARCHAR(255) NOT NULL,
+  neighborhood VARCHAR(255) NOT NULL,
+  city VARCHAR(255) NOT NULL,
+  state VARCHAR(2) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS clients (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  cpf VARCHAR(11) NOT NULL,
+  phone VARCHAR(15),
+  address_id INT,
+  FOREIGN KEY (address_id) REFERENCES address(id)
+);
+
+CREATE TABLE IF NOT EXISTS products (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  description TEXT,
+  price DECIMAL(10, 2) NOT NULL,
+  quantity INT DEFAULT 0,
+  type VARCHAR(50),
+  deleted BOOLEAN DEFAULT FALSE
+);
+
+CREATE TABLE IF NOT EXISTS sales (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  client_id INT,
+  product_id INT,
+  quantity INT NOT NULL,
+  unit_price DECIMAL(10, 2) NOT NULL,
+  total_price DECIMAL(10, 2) NOT NULL,
+  sale_date DATETIME NOT NULL,
+  FOREIGN KEY (client_id) REFERENCES clients(id),
+  FOREIGN KEY (product_id) REFERENCES products(id)
+);
