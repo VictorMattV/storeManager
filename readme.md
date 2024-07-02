@@ -26,7 +26,7 @@ Store Manager é uma API para gerenciar produtos, clientes e vendas.
 hostname: `127.0.0.1`, port: `3307`, username: `root` e password: `root`;
 - Ainda no MySQL Workbench execute o arquivo de script: `db.sql` para criar o banco de dados;
 - Por fim execute o arquivo de script: `seed.sql` para alimentar o banco de dados;
-- Na segunda vez que executar o projeto rode no terminal: `docker-compose up -d` ao invés do comando anterior;
+- Na segunda vez para executar o projeto rode no terminal: `docker-compose up -d` ao invés do comando anterior;
 
 
   
